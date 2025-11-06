@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tutor Availability Demo</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <h1>Tutor Availability Dashboard — Demo</h1>
+    <div class="controls">
+      <label>
+        Week starting:
+        <input id="startDate" type="date" />
+      </label>
+      <label>
+        Subject contains:
+        <input id="subjectFilter" type="text" list="subjectList" placeholder="e.g., Algebra, PSAT, Biology" />
+        <datalist id="subjectList"></datalist>
+      </label>
+      <button id="resetFilters">Reset</button>
+    </div>
+  </header>
+
+  <main>
+    <aside class="sidebar">
+      <h3>Select tutors</h3>
+      <div id="tutorList" class="tutor-list"></div>
+    </aside>
+
+    <section class="grid-section">
+      <div id="legend" class="legend"></div>
+      <div id="grid" class="grid"></div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <span>Dummy data for portfolio demo. No real data used.</span>
+  </footer>
+
+  <script src="./app.js"></script>
+</body>
+</html>
